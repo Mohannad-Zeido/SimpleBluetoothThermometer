@@ -14,7 +14,6 @@ SoftwareSerial BluetoothSerial(10, 11); // RX | TX
 #define ledPin LED_BUILTIN 
 int readState = 0;
 
-
 void setup() {
   pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, LOW);
@@ -22,7 +21,6 @@ void setup() {
   BluetoothSerial.begin(115200);  // HC-05 default speed in AT command more
   sensor.begin();
 }
-
 
 void loop(void)
 {
